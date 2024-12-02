@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Enhancer",
+  "version": "1.0",
+  "description": "Enhance YouTube with additional features.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
