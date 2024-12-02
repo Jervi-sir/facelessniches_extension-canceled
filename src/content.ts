@@ -1,43 +1,24 @@
-import { CopyThumbnailButton } from "./features/copyThumbnailButton";
-import { CopyVideoUrlButton } from "./features/copyVideoUrlButton";
+import { logToExtensionConsole } from "./functions/logToExtensionConsole";
+import { HandleYouTube } from "./sources/HandleYoutube";
+import { HandleYouTubeStudio } from "./sources/HandleYouTubeStudio";
 
-// Function to inject buttons
-const injectButtons = () => {
-  const targetElement = document.querySelector('#middle-row'); // Targeting the element with id="middle-row"
 
-  if (!targetElement) {
-    console.log('Target element #middle-row not found. Retrying...');
-    return;
+const initialize = () => {
+  if (window.location.hostname.includes('youtube.com') && !window.location.hostname.includes('studio')) {
+    logToExtensionConsole('Injecting YouTube buttons...');
+    HandleYouTube();
+  } else if (window.location.hostname.includes('studio.youtube.com')) {
+    logToExtensionConsole('Injecting YouTube Studio button...');
+    HandleYouTubeStudio();
   }
-
-  // Prevent duplicate buttons
-  if (document.querySelector('#custom-buttons')) return;
-
-  // Create a container for buttons
-  const container = document.createElement('div');
-  container.id = 'custom-buttons';
-  container.style.display = 'flex';
-  container.style.gap = '10px';
-  container.style.marginBottom = '10px';
-
-  // Create "Copy Thumbnail URL" button
-  const copyThumbnailButton = CopyThumbnailButton();
-
-  // Create "Copy Video URL" button
-  const copyVideoUrlButton = CopyVideoUrlButton();
-  // Add buttons to the container
-  container.append(copyThumbnailButton, copyVideoUrlButton);
-
-  // Append the container to the target element
-  targetElement.prepend(container);
 };
 
-// Observe DOM changes to handle navigation within YouTube
+// Observe DOM changes for dynamic content loading
 const observeDOMChanges = () => {
-  const observer = new MutationObserver(() => injectButtons());
+  const observer = new MutationObserver(() => initialize());
   observer.observe(document.body, { childList: true, subtree: true });
 };
 
 // Initialize the script
-injectButtons();
+initialize();
 observeDOMChanges();
