@@ -1,0 +1,36 @@
+/Dashboard: Published Videos
+curl 'https://studio.youtube.com/youtubei/v1/creator/search_creator_entities?alt=json' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: SAPISIDHASH 1733254414_272664e104eaa038ebcb5480cbf7b0c6b32787af_u SAPISID1PHASH 1733254414_272664e104eaa038ebcb5480cbf7b0c6b32787af_u SAPISID3PHASH 1733254414_272664e104eaa038ebcb5480cbf7b0c6b32787af_u' \
+  -H 'content-type: application/json' \
+  -H 'cookie: VISITOR_INFO1_LIVE=Dx6Gqal0D0s; VISITOR_PRIVACY_METADATA=CgJEWhIEGgAgWw%3D%3D; LOGIN_INFO=AFmmF2swRAIgYcBokAfrEdKSCXYkrPjCjs-COHrRML4FdqHrCewcBxgCIFs5v8kYqHp9IvUMM82X26vhYfkaWeiFeBtyaExrn-6t:QUQ3MjNmd0xfM1RGbnBBeDBCNWJYSXBCVEtZWkl1VWhDWmhfSUN0QXpYUGl1bF93M01Sa1ZyVXd4c0xCMV9CX1cwcHB2SElzYjdXZjZ0THVMb092bnNZWkc1eTBqMVRqZnYzM0hQenl6TFB4dW9YZ3FnVXZPVmFVT0xZTC1GY1hKR0FqSmtzdjg2SG4xTFlXZ1VGekZfMkhVa0xaZF9FcDhR; SID=g.a000qAg5X1i4UzQJUrcNK8BBdMaiHEA_woOtGJVlSZkW4sjRhxT3Cu2V0sTcblCuYPy1lbFFDQACgYKARsSARcSFQHGX2MiZwZ8dKq8liTY1nst1czp1hoVAUF8yKpGJeRvIppP61IYzGcwOam_0076; __Secure-1PSID=g.a000qAg5X1i4UzQJUrcNK8BBdMaiHEA_woOtGJVlSZkW4sjRhxT372Xz_XgCOic4LaGDHVKjJwACgYKAW8SARcSFQHGX2Mi7YLJpa8x_iO2gcSNQFX3vhoVAUF8yKqyvle2eTrrYgKHcE_8QiOv0076; __Secure-3PSID=g.a000qAg5X1i4UzQJUrcNK8BBdMaiHEA_woOtGJVlSZkW4sjRhxT30gLWt9NKorZvEhA2HHhjhQACgYKAWASARcSFQHGX2MiHQKv-IHyhROjgVMkkHilHRoVAUF8yKoYTJkDNAzRf3miYknh71-70076; HSID=AjQqyNIUW7JY_Yxtj; SSID=AV8zvq4vQIFgBEK5F; APISID=rZf-bFa9oCCeXLNa/A88CeHmXMwoiyCyEP; SAPISID=JtjhjOrh_2UQRU8a/AeOhNA4Hh8IxVxOGK; __Secure-1PAPISID=JtjhjOrh_2UQRU8a/AeOhNA4Hh8IxVxOGK; __Secure-3PAPISID=JtjhjOrh_2UQRU8a/AeOhNA4Hh8IxVxOGK; PREF=tz=Africa.Lagos&f5=30000&f7=100&f6=400; YSC=OUdNjDOSE3o; wide=1; __Secure-1PSIDTS=sidts-CjEBQT4rX5AyP66Q-hn-_KlCrD3kZ5kohOoZqO1A8e1dL8G66YbmVMhqbFHSjCpHsARbEAA; __Secure-3PSIDTS=sidts-CjEBQT4rX5AyP66Q-hn-_KlCrD3kZ5kohOoZqO1A8e1dL8G66YbmVMhqbFHSjCpHsARbEAA; SIDCC=AKEyXzXj-5xBnpQbJdiYEDNUJj-3VL9qmBRnrqFWAz4Jol9w5XcwiJPGPZ2n2z9st42w54D08qo; __Secure-1PSIDCC=AKEyXzW29e8SH8xIyIZpO5797HWsd0GO8XF6k_Dle_MG8AXIjCAZMoWrfFvTpDFsfGl9lyk9U0w; __Secure-3PSIDCC=AKEyXzV0Nz2cvj8es67NmCfM0x-7q3ehtkvms2mXyJG-Ve5t92M1ndXNg9HHvmqvkvM8eJnR-uJd' \
+  -H 'origin: https://studio.youtube.com' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://studio.youtube.com/channel/UClLklvzDLPM9gk6TW-I2oyw' \
+  -H 'sec-ch-ua: "Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
+  -H 'sec-ch-ua-arch: "x86"' \
+  -H 'sec-ch-ua-bitness: "64"' \
+  -H 'sec-ch-ua-full-version-list: "Brave";v="131.0.0.0", "Chromium";v="131.0.0.0", "Not_A Brand";v="24.0.0.0"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-model: ""' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-ch-ua-platform-version: "15.0.0"' \
+  -H 'sec-ch-ua-wow64: ?0' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-gpc: 1' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' \
+  -H 'x-goog-authuser: 0' \
+  -H 'x-goog-visitor-id: CgtEeDZHcWFsMEQwcyiBur26BjIKCgJEWhIEGgAgWw%3D%3D' \
+  -H 'x-origin: https://studio.youtube.com' \
+  -H 'x-youtube-ad-signals: dt=1733254411943&flash=0&frm&u_tz=60&u_his=13&u_h=969&u_w=1240&u_ah=969&u_aw=1240&u_cd=24&bc=31&bih=969&biw=1236&brdim=3%2C8%2C3%2C8%2C1240%2C8%2C1240%2C969%2C1236%2C969&vis=1&wgl=true&ca_type=image' \
+  -H 'x-youtube-client-name: 62' \
+  -H 'x-youtube-client-version: 1.20241202.00.00' \
+  -H 'x-youtube-delegation-context: EhhVQ2xMa2x2ekRMUE05Z2s2VFctSTJveXcqAggI' \
+  -H 'x-youtube-page-cl: 701926325' \
+  -H 'x-youtube-page-label: youtube.studio.web_20241202_00_RC00' \
+  -H 'x-youtube-time-zone: Africa/Lagos' \
+  -H 'x-youtube-utc-offset: 60' \
+  --data-raw '{"numVideos":5,"query":"","videoMask":{"channelId":true,"videoId":true,"lengthSeconds":true,"livestream":{"all":true},"publicLivestream":{"all":true},"origin":true,"premiere":{"all":true},"publicPremiere":{"all":true},"status":true,"thumbnailDetails":{"all":true},"title":true,"draftStatus":true,"downloadUrl":true,"watchUrl":true,"shareUrl":true,"permissions":{"all":true},"features":{"all":true},"timeCreatedSeconds":true,"timePublishedSeconds":true,"privacy":true,"contentOwnershipModelSettings":{"all":true},"contentType":true,"publicShorts":{"all":true},"podcastRssMetadata":{"all":true},"videoLinkageShortsAttribution":{"all":true},"alteredContentSettings":{"all":true},"tvfilmMetadata":{"all":true},"responseStatus":{"all":true},"statusDetails":{"all":true},"description":true,"titleFormattedString":{"all":true},"descriptionFormattedString":{"all":true},"titleDetails":{"all":true},"descriptionDetails":{"all":true},"releaseInfo":{"all":true},"inlineEditProcessingStatus":true,"metrics":{"all":true},"thumbnailEditorState":{"all":true},"videoPrechecks":{"all":true},"videoResolutions":{"all":true},"shorts":{"all":true},"videoStreamUrl":true},"context":{"client":{"clientName":62,"clientVersion":"1.20241202.00.00","hl":"en","gl":"DZ","experimentsToken":"","utcOffsetMinutes":60,"userInterfaceTheme":"USER_INTERFACE_THEME_DARK","screenWidthPoints":1236,"screenHeightPoints":969,"screenPixelDensity":1,"screenDensityFloat":1},"request":{"returnLogEntry":true,"internalExperimentFlags":[],"eats":"AQqSPV8U3OUPc6iAbRk0aVLGsiHbfUzNGLnph4CB1M3IdQGR5q57Kq542KYFTOGAzSkeGummcQcXpi1puvN2DJZU6HMfjrmozyZoCg==","sessionInfo":{"token":"YR1SZJKFZR"},"consistencyTokenJars":[]},"user":{"delegationContext":{"externalChannelId":"UClLklvzDLPM9gk6TW-I2oyw","roleType":{"channelRoleType":"CREATOR_CHANNEL_ROLE_TYPE_OWNER"}},"serializedDelegationContext":"EhhVQ2xMa2x2ekRMUE05Z2s2VFctSTJveXcqAggI"},"clientScreenNonce":"wuKMp0dhy7_MTvMw"}}'
